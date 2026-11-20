@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио AI и промпт-инженера: AI-решения, Android, адаптивные сайты на HTML5 и Bootstrap, генеративная графика.">
+  <meta name="theme-color" content="#0b0e0f">
+  <title>NEURAL.DEV — Портфолио AI-инженера</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header" id="top">
+    <nav class="navbar navbar-expand-md shell" aria-label="Основная навигация">
+      <a class="brand" href="#top" aria-label="NEURAL.DEV — на главную">
+        <span class="brand-mark" data-icon="terminal"></span><span>NEURAL<span class="mint">.DEV</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-menu" aria-controls="site-menu" aria-expanded="false" aria-label="Открыть или закрыть меню"><span data-icon="menu"></span></button>
+      <div class="collapse navbar-collapse" id="site-menu">
+        <ul class="navbar-nav mx-md-auto">
+          <li class="nav-item"><a class="nav-link active" href="#top">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Навыки</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+        </ul>
+        <a class="btn outline-button nav-contact" href="#contact">Связаться <span data-icon="up-right"></span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-inner">
+        <div class="hero-content">
+          <div class="status mono"><span></span> ОТКРЫТ К ПРОЕКТАМ</div>
+          <h1 id="hero-title">AI &amp; Prompt<br><em>Инженер<span>.</span></em></h1>
+          <p>Разрабатываю AI-решения, мобильные приложения и сайты. Соединяю код, дизайн и генеративную графику.</p>
+          <div class="hero-actions">
+            <a class="btn mint-button" href="#projects">Смотреть проекты <span data-icon="down-right"></span></a>
+            <a class="btn outline-button" href="#contact">Обсудить задачу <span data-icon="up-right"></span></a>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-hidden="true">
+          <div class="hero-image"></div>
+          <div class="visual-frame">
+            <i class="corner top-left"></i><i class="corner top-right"></i><i class="corner bottom-left"></i><i class="corner bottom-right"></i>
+            <span class="frame-label mono">FIG. 01 <b>//</b> NEURAL CORE</span>
+            <span class="frame-cross" data-icon="crosshair"></span>
+            <span class="frame-bars"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="frame-index mono">+  001 / 004</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="stack-strip" aria-label="Технологии">
+      <div class="shell stack-inner">
+        <span class="stack-title mono"><span>//</span> ТЕХНОЛОГИИ</span>
+        <ul>
+          <li><span data-icon="sparkles"></span> AI / LLM</li>
+          <li><span data-icon="terminal"></span> Prompt Engineering</li>
+          <li><span data-icon="code"></span> HTML5</li>
+          <li><span class="bootstrap-mark" aria-hidden="true">B</span> Bootstrap</li>
+          <li><span data-icon="phone"></span> Android</li>
+          <li><span data-icon="layers"></span> Generative Art</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="shell page-section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-label mono"><span>01</span> / ПОРТФОЛИО</div>
+      <div class="section-head">
+        <div><h2 id="projects-title">Избранные проекты<span>.</span></h2><p>От AI-инструментов до цифровой графики.</p></div>
+        <div class="filters" role="group" aria-label="Фильтр проектов">
+          <button type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" data-filter="ai" aria-pressed="false">AI</button>
+          <button type="button" data-filter="android" aria-pressed="false">Android</button>
+          <button type="button" data-filter="web" aria-pressed="false">Веб</button>
+          <button type="button" data-filter="art" aria-pressed="false">Графика</button>
+        </div>
+      </div>
+      <p class="visually-hidden" role="status" id="project-status"></p>
+      <div class="row g-3 g-lg-4 project-grid" id="project-grid"></div>
+      <noscript><p>Для просмотра карточек проектов включите JavaScript. Направления работы описаны в разделе «Навыки».</p></noscript>
+      <div class="more-wrap"><button type="button" class="btn outline-button" id="more-projects" aria-controls="project-grid" hidden>Все проекты <span data-icon="arrow-down"></span></button></div>
+    </section>
+
+    <section class="skills-wrap" id="skills" aria-labelledby="skills-title">
+      <div class="shell page-section">
+        <div class="section-label mono"><span>02</span> / ЭКСПЕРТИЗА</div>
+        <div class="section-head"><div><h2 id="skills-title">Чем занимаюсь<span>.</span></h2><p>Четыре направления, которые можно соединить в одном проекте.</p></div></div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-lg-3"><article class="skill-card"><span class="skill-icon" data-icon="sparkles"></span><h3>Промпт-инжиниринг</h3><p>Проектирую инструкции для LLM, собираю шаблоны промптов и проверяю ответы на тестовых примерах.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="skill-card"><span class="skill-icon" data-icon="phone"></span><h3>Android-приложения</h3><p>Прорабатываю сценарии, прототипы и мобильные интерфейсы для Android.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="skill-card"><span class="skill-icon" data-icon="code"></span><h3>Адаптивная вёрстка</h3><p>Создаю сайты на семантическом HTML5 и Bootstrap 5, учитывая сенсорные экраны и клавиатурную навигацию.</p></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="skill-card"><span class="skill-icon" data-icon="layers"></span><h3>Цифровая графика</h3><p>Создаю генеративные иллюстрации и визуальные концепции для сайтов и приложений.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell page-section about" id="about" aria-labelledby="about-title">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <div class="section-label mono"><span>03</span> / ОБО МНЕ</div>
+          <h2 id="about-title">От идеи к прототипу<span>.</span></h2>
+          <p>Я работаю на стыке AI, разработки и дизайна. Сначала разбираюсь в задаче и сценариях пользователя, затем собираю прототип и проверяю, удобно ли им пользоваться.</p>
+        </div>
+        <div class="col-lg-5">
+          <div class="workflow mono">
+            <div><span data-icon="terminal"></span> workflow.sh</div>
+            <ol><li>Определить задачу</li><li>Собрать прототип</li><li>Проверить и доработать</li></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div class="section-label mono"><span>04</span> / КОНТАКТ</div>
+        <h2 id="contact-title">Обсудим ваш проект<span>?</span></h2>
+        <p>Опишите идею в коротком брифе. Его можно сохранить и отправить удобным способом. Форма ничего не отправляет автоматически.</p>
+        <div class="hero-actions">
+          <button class="btn mint-button" type="button" data-bs-toggle="modal" data-bs-target="#brief-modal">Составить бриф <span data-icon="up-right"></span></button>
+          <a class="btn outline-button" href="https://github.com/vetos26" target="_blank" rel="noopener noreferrer">GitHub <span data-icon="up-right"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell"><a class="brand" href="#top"><span class="brand-mark" data-icon="terminal"></span><span>NEURAL<span class="mint">.DEV</span></span></a><span class="footer-note">Портфолио AI-инженера</span><a href="#top" class="back-top">Наверх <span data-icon="arrow-up"></span></a></div></footer>
+
+  <div class="modal fade" id="project-modal" tabindex="-1" aria-labelledby="case-title" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><div><div id="case-category" class="section-label mono"></div><h2 class="modal-title" id="case-title"></h2></div><button type="button" class="btn icon-button" data-bs-dismiss="modal" aria-label="Закрыть"><span data-icon="x"></span></button></div>
+    <div class="modal-body"><img id="case-image" class="case-image" alt=""><p id="case-description"></p><h3>Что показывает концепт</h3><ul id="case-features"></ul><div id="case-tags" class="tags"></div></div>
+  </div></div></div>
+
+  <div class="modal fade" id="brief-modal" tabindex="-1" aria-labelledby="brief-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><div><div class="section-label mono">БРИФ / 01</div><h2 id="brief-title" class="modal-title">Расскажите о задаче</h2></div><button type="button" class="btn icon-button" data-bs-dismiss="modal" aria-label="Закрыть"><span data-icon="x"></span></button></div>
+    <form id="brief-form" class="brief-form">
+      <label for="brief-name">Ваше имя</label><input class="form-control" id="brief-name" name="name" maxlength="100" placeholder="Как к вам обращаться">
+      <label for="brief-type">Направление</label><select class="form-select" id="brief-type" name="type"><option>AI / Промпты</option><option>Android-приложение</option><option>Сайт на Bootstrap</option><option>Цифровая графика</option><option>Другое</option></select>
+      <label for="brief-task">Что нужно сделать? <span class="mint">*</span></label><textarea class="form-control" id="brief-task" name="task" required maxlength="2000" rows="4" placeholder="Опишите цель и желаемый результат"></textarea>
+      <button class="btn mint-button" type="submit">Скачать бриф <span data-icon="download"></span></button>
+      <p id="brief-status" role="status" class="form-status"></p>
+    </form>
+  </div></div></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
